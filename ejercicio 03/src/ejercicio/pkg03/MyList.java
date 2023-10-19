@@ -81,12 +81,12 @@ public class MyList<E> {
         if(actualNode==lastNode){
             atras();
             lastNode=actualNode;
-            actualNode.getReturnNode().setNextNode(null);
+            actualNode.setNextNode(null);
         }
         if(actualNode==firstNode){
             adelante();
             firstNode=actualNode;
-            actualNode.getNextNode().setReturnNode(null);
+            actualNode.setReturnNode(null);
         }
         else{
             actualNode.getNextNode().setReturnNode(actualNode.getReturnNode());

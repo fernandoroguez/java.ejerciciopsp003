@@ -80,7 +80,6 @@ public class appl extends javax.swing.JFrame {
         l.inicio();
         fechas[cont] = "borrar filtro";
         filtro.setModel(new javax.swing.DefaultComboBoxModel<>(fechas));
-        //cont=l.getnum();
     }
 
     private void mostrar(MyList<Empleado> l) {
@@ -474,6 +473,7 @@ public class appl extends javax.swing.JFrame {
 
             l.showMyList();
             original.showMyList();
+      
 
         } else {
             btncrear.setEnabled(false);
